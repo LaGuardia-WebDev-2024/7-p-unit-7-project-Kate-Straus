@@ -4,7 +4,12 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+
+//Star Variables
+var starxPos = 30;
+var staryPos = 390;
+var starWidth = 75;
+var starHeight = 75;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -17,11 +22,24 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
-  
-  fireworkX = fireworkX + 1;
+
+    
+
+    //Ball
+    fill(355, 355, 255);
+    ellipse(starxPos, staryPos, starWidth, starHeight);
+    
+    starxPos += 2;
+    staryPos -= 2;
+    
+    starWidth -= 1
+    starHeight -=1
+
+
 
 }
+
+
 
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
